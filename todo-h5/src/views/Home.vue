@@ -1,5 +1,6 @@
 <template>
-  <div class="home">
+  <div class="home" @click="toLogin">
+    login
   </div>
 </template>
 
@@ -9,6 +10,11 @@
 export default {
   name: 'home',
   components: {
+  },
+  methods: {
+    toLogin  () {
+      this.$router.push('/login')
+    }
   }
 }
 </script>
